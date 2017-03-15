@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParcialTech.Registro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace ParcialTech
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void tipoEmailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmTipoEmails().Show();
+        }
+
+        private void retencionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormRetenciones().Show();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormEmpleado().Show();
         }
     }
 }
